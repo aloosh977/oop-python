@@ -17,3 +17,12 @@ first_number=10
 second_number=5
 calc=SimpleCalc(first_number,second_number)
 print(calc.add())
+
+class AdvancedCalc(SimpleCalc):
+    def modulo(self):
+        return self.first_number%self.second_number
+    def power(self):
+        return pow(self.first_number,self.second_number)
+
+advCalc=AdvancedCalc(first_number,second_number)
+print(advCalc.power())
