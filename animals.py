@@ -1,16 +1,19 @@
 class Animal:
     def sound(self):
         pass
-    
+
+
 class Dog(Animal):
     def sound(self):
         return "woof"
+
 
 class Cat(Animal):
     def sound(self):
         return "Meow"
 
-dog=Dog()
+
+dog = Dog()
 print(dog.sound())
-cat=Cat()
+cat = Cat()
 print(cat.sound())
