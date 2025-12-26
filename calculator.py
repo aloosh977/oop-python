@@ -1,6 +1,3 @@
-import sys
-
-
 class Operation:
     def __init__(self, first_number, second_number):
         self.first_number = first_number
@@ -25,7 +22,6 @@ class SimpleCalc(Operation):
             return self.first_number / self.second_number
         except ZeroDivisionError:
             return "Error: Cannot divide by zero"
-            # sys.exit()
 
 
 first_number = 10
